@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Presentations
+  chapters:
+  - file: presentations/overview
+    sections:
+    - file: presentations/giscience-2021/comber
+    - file: presentations/giscience-2021/malleson
+    
+- caption: Journal Papers
+  chapters:
+  - file: papers/overview
+
+- caption: Posters
+  chapters:
+  - file: posters/overview
+  
+- caption: Case Studies
+  chapters:
+  - file: case_studies/overview
