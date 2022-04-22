@@ -8,8 +8,8 @@ parts:
   chapters:
   - file: presentations/overview
     sections:
-    - file: presentations/giscience-2021/comber
-    - file: presentations/giscience-2021/malleson
+    - file: presentations/giscience-2021/giscience-2021
+    - file: presentations/gisruk-2022/gisruk-2022
     
 - caption: Journal Papers
   chapters:

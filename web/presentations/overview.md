@@ -1,8 +1,6 @@
 # Presentations
 
-<!-- add your text! -->
-
-_Will list presentations_
+Presentations to academic conferences about the UTM-Hanoi project
 
 ## Content
 
