@@ -17,11 +17,12 @@ be, whether public transport can cope, and whether there are better alternatives
 Successful policies will dramatically improve the wellbeing for all citizens
 in Hanoi by reducing pollution and providing more equitable access to opportunities.
 
-## Content
+## Contact
+
+For more information please contact the principal inestigator at the University of Leeds, [Nick Malleson](https://environment.leeds.ac.uk/geography/staff/1069/dr-nick-malleson).
+
+## Table of Contents
 
 ```{tableofcontents}
 ```
 
-## Contact
-
-XXXX
