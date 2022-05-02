@@ -1,2 +1,6 @@
 # Build pages for the web
 _build
+_site
+
+# Mac crap
+.DS_Store
