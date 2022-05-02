@@ -4,21 +4,23 @@
 format: jb-book
 root: intro
 parts:
-- caption: Presentations
+  # PRESENTATIONS
+  # Note: Not putting a 'caption' here because otherwise it gets printed twice on the 
+  # home page (the caption gets printed plus the header of the 'presentations/overview.md' page)
+  # - caption: Presentations
+- caption: 
   chapters:
   - file: presentations/overview
     sections:
     - file: presentations/giscience-2021/giscience-2021
     - file: presentations/gisruk-2022/gisruk-2022
     
-- caption: Journal Papers
+# PAPERS
+- caption: 
   chapters:
   - file: papers/overview
 
-- caption: Posters
-  chapters:
-  - file: posters/overview
-  
-- caption: Case Studies
+# CASE STUDIES
+- caption: 
   chapters:
   - file: case_studies/overview

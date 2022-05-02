@@ -4,8 +4,4 @@
 
 _Will show case studies_
 
-## Content
-
-```{tableofcontents}
-```
 

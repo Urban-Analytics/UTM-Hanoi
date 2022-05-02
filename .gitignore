@@ -2,5 +2,8 @@
 _build
 _site
 
+# vim
+*.swp
+
 # Mac crap
 .DS_Store
