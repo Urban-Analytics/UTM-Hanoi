@@ -2,10 +2,7 @@
 
 <!-- add your text! -->
 
-_Will show papers_
+_Forthcoming (will show papers)_
 
-## Content
 
-```{tableofcontents}
-```
 
