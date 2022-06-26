@@ -14,6 +14,7 @@ parts:
     sections:
     - file: presentations/giscience-2021/giscience-2021
     - file: presentations/gisruk-2022/gisruk-2022
+    - file: presentations/agile-2022/agile-2022
     
 # PAPERS
 - caption: 
