@@ -55,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://github.com/Urban-Analytics/UTM-Hanoi/case_studies/eric/eric_lida.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Let the Data Speak for Itself: Developing a New Data Dashboard for a Hanoi Transport Survey" href="../kristina/kristina_lida.html" />
     <link rel="prev" title="Case studies" href="../overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -157,6 +158,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Possible Impacts of a Motorbike Ban on Transport in Hanoi
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kristina/kristina_lida.html">
+     Let the Data Speak for Itself: Developing a New Data Dashboard for a Hanoi Transport Survey
     </a>
    </li>
   </ul>
@@ -356,18 +362,50 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#why-is-it-that-in-a-megacity-with-8-million-people-90-of-the-vehicles-driven-are-motorbikes-what-are-the-underlying-factors-influencing-individuals-travel-behaviors-and-attitudes-towards-a-proposed-motorbike-ban-what-would-be-the-impact-of-such-a-ban-on-the-flows-associated-with-other-transport-modes-this-research-addresses-the-aforementioned-questions">
-   Why is it that in a Megacity with 8 million people, 90% of the vehicles
-driven are motorbikes? What are the underlying factors influencing
-individuals’ travel behaviors and attitudes towards a proposed motorbike
-ban? What would be the impact of such a ban on the flows associated with
-other transport modes? This research addresses the aforementioned
-questions.
+  <a class="reference internal nav-link" href="#project-overview">
+   Project overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-overview">
-   Project overview
+  <a class="reference internal nav-link" href="#data-and-methods">
+   Data and methods
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#key-findings">
+   Key findings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classification-model-results">
+     Classification Model Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spatial-interaction-model-results">
+     Spatial Interaction Model Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#value-of-the-research">
+   Value of the research
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#people-and-partners">
+   People and Partners
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funders">
+   Funders
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
   </a>
  </li>
 </ul>
@@ -390,18 +428,50 @@ questions.
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#why-is-it-that-in-a-megacity-with-8-million-people-90-of-the-vehicles-driven-are-motorbikes-what-are-the-underlying-factors-influencing-individuals-travel-behaviors-and-attitudes-towards-a-proposed-motorbike-ban-what-would-be-the-impact-of-such-a-ban-on-the-flows-associated-with-other-transport-modes-this-research-addresses-the-aforementioned-questions">
-   Why is it that in a Megacity with 8 million people, 90% of the vehicles
-driven are motorbikes? What are the underlying factors influencing
-individuals’ travel behaviors and attitudes towards a proposed motorbike
-ban? What would be the impact of such a ban on the flows associated with
-other transport modes? This research addresses the aforementioned
-questions.
+  <a class="reference internal nav-link" href="#project-overview">
+   Project overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-overview">
-   Project overview
+  <a class="reference internal nav-link" href="#data-and-methods">
+   Data and methods
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#key-findings">
+   Key findings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classification-model-results">
+     Classification Model Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spatial-interaction-model-results">
+     Spatial Interaction Model Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#value-of-the-research">
+   Value of the research
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#people-and-partners">
+   People and Partners
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funders">
+   Funders
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
   </a>
  </li>
 </ul>
@@ -418,14 +488,13 @@ questions.
 <h1>Possible Impacts of a Motorbike Ban on Transport in Hanoi<a class="headerlink" href="#possible-impacts-of-a-motorbike-ban-on-transport-in-hanoi" title="Permalink to this headline">#</a></h1>
 <p>Author: <em>Eric Muriithi</em></p>
 <hr class="docutils" />
-<section id="why-is-it-that-in-a-megacity-with-8-million-people-90-of-the-vehicles-driven-are-motorbikes-what-are-the-underlying-factors-influencing-individuals-travel-behaviors-and-attitudes-towards-a-proposed-motorbike-ban-what-would-be-the-impact-of-such-a-ban-on-the-flows-associated-with-other-transport-modes-this-research-addresses-the-aforementioned-questions">
-<h2>Why is it that in a Megacity with 8 million people, 90% of the vehicles
+<p>Why is it that in a Megacity with 8 million people, 90% of the vehicles
 driven are motorbikes? What are the underlying factors influencing
 individuals’ travel behaviors and attitudes towards a proposed motorbike
 ban? What would be the impact of such a ban on the flows associated with
 other transport modes? This research addresses the aforementioned
-questions.<a class="headerlink" href="#why-is-it-that-in-a-megacity-with-8-million-people-90-of-the-vehicles-driven-are-motorbikes-what-are-the-underlying-factors-influencing-individuals-travel-behaviors-and-attitudes-towards-a-proposed-motorbike-ban-what-would-be-the-impact-of-such-a-ban-on-the-flows-associated-with-other-transport-modes-this-research-addresses-the-aforementioned-questions" title="Permalink to this headline">#</a></h2>
-</section>
+questions.</p>
+<hr class="docutils" />
 <section id="project-overview">
 <h2>Project overview<a class="headerlink" href="#project-overview" title="Permalink to this headline">#</a></h2>
 <p>An overwhelming majority of inhabitants in Hanoi city use motorbikes as
@@ -440,16 +509,19 @@ relation to a potential motorbike ban. The aim of the modeling was to
 help policymakers predict the impact of different transport policy
 changes and to understand the process driving different travel
 behaviors. The models implemented were:</p>
-<p>a.  A Modal Spatial Interaction Model to investigate the modal shift of
-flows if a ban were implemented.</p>
-<p>b.  A boosted trees Classification Model aimed at predicting
+<ul class="simple">
+<li><p>A Modal Spatial Interaction Model to investigate the modal shift of
+flows if a ban were implemented.</p></li>
+<li><p>A boosted trees Classification Model aimed at predicting
 individuals’ attitudes towards the proposed ban and investigating
-the underlying factors/reasons.</p>
+the underlying factors/reasons.</p></li>
+</ul>
 <p>The models along with other exploratory analyses were presented to
 policymakers using an interactive R shiny dashboard developed by LIDA
 data scientist Kristina Bratkova.</p>
-<p>**Data and methods **</p>
-<p><strong>Outline the; who, what, when, where and how of the study.</strong></p>
+</section>
+<section id="data-and-methods">
+<h2>Data and methods<a class="headerlink" href="#data-and-methods" title="Permalink to this headline">#</a></h2>
 <p>The main data set used in this study is a bespoke transport survey of
 30, 000 residents that was undertaken to capture the dynamics and trends
 of people’s regular travel in and around the city, including the
@@ -466,20 +538,55 @@ investigate variable importance and why the model makes the predictions
 it does. An Extreme Boosted Trees (XGBoost) model was used to classify
 individual respondents into two groups: those who agree and those who
 disagree with the potential motorbike ban. The model achieved the
-evaluation metrics shown in Fig2 and Table1:</p>
-<p><img alt="" src="case_studies/eric/media/image1.png" />{width=”4.51875in” height=”2.9930555555555554in”}</p>
-<p><img alt="" src="case_studies/eric/media/image2.png" />{width=”4.666666666666667in”
-height=”3.332478127734033in”}</p>
-<p>Figure 2: Confusion matrix</p>
-<p>Metric        Value</p>
-<hr class="docutils" />
-<p>Accuracy      0.878
-Recall        0.853
-Specificity   0.919
-PPV           0.945
-F-measure     0.897
-ROC_AUC      0.953</p>
-<p>Table 1: Evaluation metrics</p>
+evaluation metrics shown in Fig2 and Table1.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="Map of spatial distribution of respondents" src="../../_images/fig1.jpg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 1: How opinions varied based on home location with larger blobs representing more respondents</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="Confusion matrix" src="../../_images/fig2.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 2: Confusion matrix.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: Evaluation metrics:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Accuracy</p></td>
+<td><p>0.878</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall</p></td>
+<td><p>0.853</p></td>
+</tr>
+<tr class="row-even"><td><p>Specificity</p></td>
+<td><p>0.919</p></td>
+</tr>
+<tr class="row-odd"><td><p>PPV</p></td>
+<td><p>0.945</p></td>
+</tr>
+<tr class="row-even"><td><p>F-measure</p></td>
+<td><p>0.897</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROC_AUC</p></td>
+<td><p>0.953</p></td>
+</tr>
+</tbody>
+</table>
 <p>The model’s performance was quite impressive: the accuracy shows that
 the model predicts accurately 87.8% of the test data, has an 85.3%
 probability of detecting a person would agree with the ban (recall) and
@@ -532,18 +639,30 @@ the project’s repository:
 <a class="reference external" href="https://urban-analytics.github.io/UTM-Hanoi/intro.html">https://urban-analytics.github.io/UTM-Hanoi/intro.html</a></p>
 <p>Once the model parameters were calibrated and fit to the data, the
 following performance metrics were obtained:</p>
-<p>metric   estimate</p>
-<hr class="docutils" />
-<p>rmse     10.2
-rsq      0.589</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>metric</p></th>
+<th class="head"><p>estimate</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rmse</p></td>
+<td><p>10.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>rsq</p></td>
+<td><p>0.589</p></td>
+</tr>
+</tbody>
+</table>
 <p>This indicates that on average, incorrect predictions are wrong by
 around 10 flows and the model can explain about 59% of the variability
 in the data, which was considered close enough to reproducing the
 original flow matrix.</p>
-<p>**Key findings **</p>
-<p><strong>Outline the results of the research project. Aim to stick to 2-3
-paragraphs. Use imagery (clearly labelled) where appropriate.</strong></p>
-<p><strong>[Classification Model Results]{.underline}</strong></p>
+</section>
+<section id="key-findings">
+<h2>Key findings<a class="headerlink" href="#key-findings" title="Permalink to this headline">#</a></h2>
+<section id="classification-model-results">
+<h3>Classification Model Results<a class="headerlink" href="#classification-model-results" title="Permalink to this headline">#</a></h3>
 <p>After obtaining satisfactory performance from the XGBoost model, this
 research then sought to explore the underlying factors driving the
 model’s predictions. One of the model interpretation techniques
@@ -553,9 +672,16 @@ without the variable in every possible order. The SHAP summary plot
 combines feature importance and feature effects with features being
 ordered according to their importance and colored according to the value
 of the feature from low to high as shown in Fig3:</p>
-<p><img alt="" src="case_studies/eric/media/image3.png" />{width=”5.0in” height=”5.0in”}</p>
-<p>Figure 3: SHAP summary plot. Shapley values &gt; 0 push the model towards
-‘agree’ outcome.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="SHAP summary plot" src="../../_images/fig3.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 3: SHAP summary plot. Shapley values &gt; 0 push the model towards ‘agree’ outcome.</p></td>
+</tr>
+</tbody>
+</table>
 <p>Some inferences we can derive from the Shapley plot are:</p>
 <ul class="simple">
 <li><p><em>Freq_car_X0</em> (a dummy variable with a value of 1 if the
@@ -578,13 +704,19 @@ not have a significant effect on the model outcomes.</p></li>
 a feature and the impact on predictions. We can take a closer look at
 the exact form of the relationship by making SHAP dependence plot as
 shown in Fig4:</p>
-<p><img alt="C:\Users\medewan\Downloads\shapdp.png" src="case_studies/eric/media/image4.png" />{width=”6.5in”
-height=”6.5in”}</p>
-<p>Figure 4: SHAP dependence plots of the first 20 important variables</p>
-<p>Please see: <a class="reference external" href="https://urban-analytics.github.io/UTM-Hanoi/intro.html">https://urban-analytics.github.io/UTM-Hanoi/intro.html</a> for
-code notebooks and more model explainability techniques implemented in
-this study.</p>
-<p><strong>[Spatial Interaction Model Results]{.underline}</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="SHAP dependence plots" src="../../_images/fig4.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 4: SHAP dependence plots of the first 20 important variables</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="spatial-interaction-model-results">
+<h3>Spatial Interaction Model Results<a class="headerlink" href="#spatial-interaction-model-results" title="Permalink to this headline">#</a></h3>
 <p>One of the survey questions was: <em>What would be your alternative vehicle
 for this trip if a motorbike ban was enacted?</em> To estimate the change in
 modal flows in the case of a ban, the Spatial Interaction Model was
@@ -602,38 +734,89 @@ balancing factors <span class="math notranslate nohighlight">\(A_{i}^{m}B_{j}\)<
 was used to obtain new scenario modal flows.</p></li>
 </ol>
 <p>The table below shows an example of a motorbike ban scenario:</p>
-<p>vehicle   Flows before ban   Flows after ban   Change in flows</p>
-<hr class="docutils" />
-<p>taxi      99                 2652              2553
-car       5060               7294              2234
-bus       110                1887              1777
-ebike     876                2132              1256
-bike      870                2080              1210
-walk      287                1131              844
-moto      9868               0                 -9868</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>vehicle</p></th>
+<th class="head"><p>Flows before ban</p></th>
+<th class="head"><p>Flows after ban</p></th>
+<th class="head"><p>Change in flows</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>taxi</p></td>
+<td><p>99</p></td>
+<td><p>2652</p></td>
+<td><p>2553</p></td>
+</tr>
+<tr class="row-odd"><td><p>car</p></td>
+<td><p>5060</p></td>
+<td><p>7294</p></td>
+<td><p>2234</p></td>
+</tr>
+<tr class="row-even"><td><p>bus</p></td>
+<td><p>110</p></td>
+<td><p>1887</p></td>
+<td><p>1777</p></td>
+</tr>
+<tr class="row-odd"><td><p>ebike</p></td>
+<td><p>876</p></td>
+<td><p>2132</p></td>
+<td><p>1256</p></td>
+</tr>
+<tr class="row-even"><td><p>bike</p></td>
+<td><p>870</p></td>
+<td><p>2080</p></td>
+<td><p>1210</p></td>
+</tr>
+<tr class="row-odd"><td><p>walk</p></td>
+<td><p>287</p></td>
+<td><p>1131</p></td>
+<td><p>844</p></td>
+</tr>
+<tr class="row-even"><td><p>moto</p></td>
+<td><p>9868</p></td>
+<td><p>0</p></td>
+<td><p>-9868</p></td>
+</tr>
+</tbody>
+</table>
 <p>In this scenario, majority of the flows previously associated with
 motorbikes would result to taxis, cars and buses and only a small number
 to walking. With this information, more downstream analyses can be
 performed for each particular mode. For instance, the map below in Fig5
 shows the change in flows at destinations associated with ebikes in the
 event of a motorbike ban.</p>
-<p><img alt="" src="case_studies/eric/media/image5.png" />{width=”5.777777777777778in”
-height=”4.305555555555555in”}</p>
-<p>Figure 5: Change in flows at ebike destinations as a result of motorbike
-ban</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="Map of change in ebike destinations" src="../../_images/fig5.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 5: Change in flows at ebike destinations as a result of motorbike ban</p></td>
+</tr>
+</tbody>
+</table>
 <p>More importantly, the changes in routes taken by various vehicles from
 origin zones to destination zones can be observed. The maps below in
 Fig6 show the routes taken by ebike users weighted by the number of
 flows before and after the ban.</p>
-<p><img alt="" src="case_studies/eric/media/image6.png" />{width=”6.5in” height=”4.245138888888889in”}</p>
-<p>Figure 6: Map of routes weighted by flows. Left: before motorbike ban.
-Right: After motorbike ban</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="Map of routes weighted by flows" src="../../_images/fig6.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Figure 6: Map of routes weighted by flows. Left: before motorbike ban. Right: After motorbike ban</p></td>
+</tr>
+</tbody>
+</table>
 <p>Using the analyses above, policymakers are able to estimate the impact
 of a motorbike ban on the existing modes of transport used in the city,
 origin and destination zones, and corresponding routes/infrastructure.</p>
-<p>**Value of the research **</p>
-<p><strong>What is the impact? How could the research be applied to real-world
-problems or what is the usage/benefit?</strong></p>
+</section>
+</section>
+<section id="value-of-the-research">
+<h2>Value of the research<a class="headerlink" href="#value-of-the-research" title="Permalink to this headline">#</a></h2>
 <p>As outlined earlier, an overwhelming majority of Hanoi residents use
 motorbikes as their primary means of transport. The effects of such a
 large number and high density of motorbikes has led to severe problems
@@ -680,29 +863,34 @@ vehicles.</p>
 <p>f.  The modal Spatial Interaction Model gives a glimpse of the impact of
 the motorbike ban on existing modes of transport but also raises an
 important question: would the existing road infrastructure keep up?</p>
-<p><strong>Research theme</strong></p>
-<p><strong>Identify which research theme this sits under:</strong></p>
-<p>Urban analytics</p>
-<p><strong>People and Partners</strong></p>
-<p>Eric Wanjau, Data Scientist, Leeds Institute for Data Analytics,
-University of Leeds, UK</p>
-<p>Kristina Bratkova, Data Scientist, Leeds Institute for Data Analytics,
-University of Leeds, UK</p>
-<p>Prof Nick Malleson, Professor of Spatial Science, Leeds Institute for
-Data Analytics, University of Leeds, UK (Lead Supervisor)</p>
-<p>Prof Alexis Comber, Professor of Spatial Data Analytics, Leeds Institute
-for Data Analytics, University of Leeds, UK (Co-Supervisor)</p>
-<p>Dr Minh Le Kieu, Lecturer in Transport Analytics, University of
-Auckland, New Zealand (Co-Supervisor)</p>
-<p>Phe Hoang Huu, R&amp;D Consultants, Hanoi City, Vietnam</p>
-<p>Thanh Bui Quang, Faculty of Geography, VNU University of Science, Hanoi,
-Vietnam</p>
-<p>Hang Nguyen Thi Thuy, VNU Vietnam Japan University, Vietnam National
-University, Hanoi, Vietnam</p>
-<p><strong>Funders</strong></p>
+</section>
+<section id="people-and-partners">
+<h2>People and Partners<a class="headerlink" href="#people-and-partners" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Eric Wanjau, Data Scientist, Leeds Institute for Data Analytics,
+University of Leeds, UK</p></li>
+<li><p>Kristina Bratkova, Data Scientist, Leeds Institute for Data Analytics,
+University of Leeds, UK</p></li>
+<li><p>Prof Nick Malleson, Professor of Spatial Science, Leeds Institute for
+Data Analytics, University of Leeds, UK (Lead Supervisor)</p></li>
+<li><p>Prof Alexis Comber, Professor of Spatial Data Analytics, Leeds Institute
+for Data Analytics, University of Leeds, UK (Co-Supervisor)</p></li>
+<li><p>Dr Minh Le Kieu, Lecturer in Transport Analytics, University of
+Auckland, New Zealand (Co-Supervisor)</p></li>
+<li><p>Phe Hoang Huu, R&amp;D Consultants, Hanoi City, Vietnam</p></li>
+<li><p>Thanh Bui Quang, Faculty of Geography, VNU University of Science, Hanoi,
+Vietnam</p></li>
+<li><p>Hang Nguyen Thi Thuy, VNU Vietnam Japan University, Vietnam National
+University, Hanoi, Vietnam</p></li>
+</ul>
+</section>
+<section id="funders">
+<h2>Funders<a class="headerlink" href="#funders" title="Permalink to this headline">#</a></h2>
 <p>This work has received funding from the British Academy under the Urban
 Infrastructures of Well-Being programme [grant number UWB190190].</p>
-<p><strong>References</strong></p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
 <p>Van, H. T. (2009) Upgrading from motorbikes to cars : Simulation of
 current and future traffic conditions in Ho Chi Minh City, Journal of
 the Eastern Asia Society for Transportation Studies. Wilson, A. G.
@@ -745,6 +933,13 @@ Developments’, Environment and Planning A: Economy and Space. doi:
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Case studies</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="../kristina/kristina_lida.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Let the Data Speak for Itself: Developing a New Data Dashboard for a Hanoi Transport Survey</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

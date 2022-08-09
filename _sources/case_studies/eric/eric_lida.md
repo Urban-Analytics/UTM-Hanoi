@@ -3,12 +3,14 @@
 Author: _Eric Muriithi_
 
 ---
+
 Why is it that in a Megacity with 8 million people, 90% of the vehicles
 driven are motorbikes? What are the underlying factors influencing
 individuals' travel behaviors and attitudes towards a proposed motorbike
 ban? What would be the impact of such a ban on the flows associated with
 other transport modes? This research addresses the aforementioned
 questions.
+
 ---
 
 ## Project overview
@@ -26,10 +28,10 @@ help policymakers predict the impact of different transport policy
 changes and to understand the process driving different travel
 behaviors. The models implemented were:
 
-a.  A Modal Spatial Interaction Model to investigate the modal shift of
+ - A Modal Spatial Interaction Model to investigate the modal shift of
     flows if a ban were implemented.
 
-b.  A boosted trees Classification Model aimed at predicting
+ - A boosted trees Classification Model aimed at predicting
     individuals' attitudes towards the proposed ban and investigating
     the underlying factors/reasons.
 
@@ -37,9 +39,7 @@ The models along with other exploratory analyses were presented to
 policymakers using an interactive R shiny dashboard developed by LIDA
 data scientist Kristina Bratkova.
 
-**Data and methods **
-
-**Outline the; who, what, when, where and how of the study.**
+## Data and methods
 
 The main data set used in this study is a bespoke transport survey of
 30, 000 residents that was undertaken to capture the dynamics and trends
@@ -58,25 +58,32 @@ investigate variable importance and why the model makes the predictions
 it does. An Extreme Boosted Trees (XGBoost) model was used to classify
 individual respondents into two groups: those who agree and those who
 disagree with the potential motorbike ban. The model achieved the
-evaluation metrics shown in Fig2 and Table1:
+evaluation metrics shown in Fig2 and Table1.
 
-![](media/image1.png){width="4.51875in" height="2.9930555555555554in"}
+| ![Map of spatial distribution of respondents](fig1.jpg "Figure 1")                                   |
+| --                                                                                                   |
+| Figure 1: How opinions varied based on home location with larger blobs representing more respondents |
 
-![](media/image2.png){width="4.666666666666667in"
-height="3.332478127734033in"}
 
-Figure 2: Confusion matrix
 
-  Metric        Value
-  ------------- -------
-  Accuracy      0.878
-  Recall        0.853
-  Specificity   0.919
-  PPV           0.945
-  F-measure     0.897
-  ROC\_AUC      0.953
+| ![Confusion matrix](fig2.png "Figure 2") |
+| ---                                      |
+| Figure 2: Confusion matrix.              |
 
-Table 1: Evaluation metrics
+
+
+
+Table 1: Evaluation metrics:
+
+|  Metric        | Value |
+|  ------------- | ------- |
+|  Accuracy      | 0.878 |
+|  Recall        | 0.853 |
+|  Specificity   | 0.919 |
+| PPV            | 0.945 |
+| F-measure      | 0.897 |
+|  ROC\_AUC      | 0.953 |
+
 
 The model's performance was quite impressive: the accuracy shows that
 the model predicts accurately 87.8% of the test data, has an 85.3%
@@ -143,22 +150,19 @@ the project's repository:
 Once the model parameters were calibrated and fit to the data, the
 following performance metrics were obtained:
 
-  metric   estimate
-  -------- ----------
-  rmse     10.2
-  rsq      0.589
+|  metric   | estimate |
+|  -------- | ---------- |
+| rmse      | 10.2       |
+| rsq       | 0.589      |
 
 This indicates that on average, incorrect predictions are wrong by
 around 10 flows and the model can explain about 59% of the variability
 in the data, which was considered close enough to reproducing the
 original flow matrix.
 
-**Key findings **
+## Key findings
 
-**Outline the results of the research project. Aim to stick to 2-3
-paragraphs. Use imagery (clearly labelled) where appropriate.**
-
-**[Classification Model Results]{.underline}**
+### Classification Model Results
 
 After obtaining satisfactory performance from the XGBoost model, this
 research then sought to explore the underlying factors driving the
@@ -170,10 +174,10 @@ combines feature importance and feature effects with features being
 ordered according to their importance and colored according to the value
 of the feature from low to high as shown in Fig3:
 
-![](media/image3.png){width="5.0in" height="5.0in"}
-
-Figure 3: SHAP summary plot. Shapley values \> 0 push the model towards
-'agree' outcome.
+| ![SHAP summary plot](fig3.png "Figure 3")                                                |
+| ---                                                                                      |
+| Figure 3: SHAP summary plot. Shapley values \> 0 push the model towards 'agree' outcome. |
+ 
 
 Some inferences we can derive from the Shapley plot are:
 
@@ -201,16 +205,12 @@ a feature and the impact on predictions. We can take a closer look at
 the exact form of the relationship by making SHAP dependence plot as
 shown in Fig4:
 
-![C:\\Users\\medewan\\Downloads\\shapdp.png](media/image4.png){width="6.5in"
-height="6.5in"}
+| ![SHAP dependence plots](fig4.png)                                  |
+| ---                                                                 |
+| Figure 4: SHAP dependence plots of the first 20 important variables |
 
-Figure 4: SHAP dependence plots of the first 20 important variables
 
-Please see: <https://urban-analytics.github.io/UTM-Hanoi/intro.html> for
-code notebooks and more model explainability techniques implemented in
-this study.
-
-**[Spatial Interaction Model Results]{.underline}**
+### Spatial Interaction Model Results
 
 One of the survey questions was: *What would be your alternative vehicle
 for this trip if a motorbike ban was enacted?* To estimate the change in
@@ -233,15 +233,15 @@ altered in the following way:
 
 The table below shows an example of a motorbike ban scenario:
 
-  vehicle   Flows before ban   Flows after ban   Change in flows
-  --------- ------------------ ----------------- -----------------
-  taxi      99                 2652              2553
-  car       5060               7294              2234
-  bus       110                1887              1777
-  ebike     876                2132              1256
-  bike      870                2080              1210
-  walk      287                1131              844
-  moto      9868               0                 -9868
+| vehicle   | Flows before ban   | Flows after ban   | Change in flows   |
+| --------- | ------------------ | ----------------- | ----------------- |
+| taxi      | 99                 | 2652              | 2553              |
+| car       | 5060               | 7294              | 2234              |
+| bus       | 110                | 1887              | 1777              |
+| ebike     | 876                | 2132              | 1256              |
+| bike      | 870                | 2080              | 1210              |
+| walk      | 287                | 1131              | 844               |
+| moto      | 9868               | 0                 | -9868             |
 
 In this scenario, majority of the flows previously associated with
 motorbikes would result to taxis, cars and buses and only a small number
@@ -250,30 +250,25 @@ performed for each particular mode. For instance, the map below in Fig5
 shows the change in flows at destinations associated with ebikes in the
 event of a motorbike ban.
 
-![](media/image5.png){width="5.777777777777778in"
-height="4.305555555555555in"}
+| ![Map of change in ebike destinations](fig5.png "Figure 5")                  |
+| ---                                                                          |
+| Figure 5: Change in flows at ebike destinations as a result of motorbike ban |
 
-Figure 5: Change in flows at ebike destinations as a result of motorbike
-ban
 
 More importantly, the changes in routes taken by various vehicles from
 origin zones to destination zones can be observed. The maps below in
 Fig6 show the routes taken by ebike users weighted by the number of
 flows before and after the ban.
 
-![](media/image6.png){width="6.5in" height="4.245138888888889in"}
-
-Figure 6: Map of routes weighted by flows. Left: before motorbike ban.
-Right: After motorbike ban
+| ![Map of routes weighted by flows](fig6.png "Figure 6")                                           |
+| ---                                                                                               |
+| Figure 6: Map of routes weighted by flows. Left: before motorbike ban. Right: After motorbike ban |
 
 Using the analyses above, policymakers are able to estimate the impact
 of a motorbike ban on the existing modes of transport used in the city,
 origin and destination zones, and corresponding routes/infrastructure.
 
-**Value of the research **
-
-**What is the impact? How could the research be applied to real-world
-problems or what is the usage/benefit?**
+## Value of the research
 
 As outlined earlier, an overwhelming majority of Hanoi residents use
 motorbikes as their primary means of transport. The effects of such a
@@ -334,43 +329,37 @@ f.  The modal Spatial Interaction Model gives a glimpse of the impact of
     the motorbike ban on existing modes of transport but also raises an
     important question: would the existing road infrastructure keep up?
 
-**Research theme**
+## People and Partners
 
-**Identify which research theme this sits under:**
-
-Urban analytics
-
-**People and Partners**
-
-Eric Wanjau, Data Scientist, Leeds Institute for Data Analytics,
+ - Eric Wanjau, Data Scientist, Leeds Institute for Data Analytics,
 University of Leeds, UK
 
-Kristina Bratkova, Data Scientist, Leeds Institute for Data Analytics,
+ - Kristina Bratkova, Data Scientist, Leeds Institute for Data Analytics,
 University of Leeds, UK
 
-Prof Nick Malleson, Professor of Spatial Science, Leeds Institute for
+ - Prof Nick Malleson, Professor of Spatial Science, Leeds Institute for
 Data Analytics, University of Leeds, UK (Lead Supervisor)
 
-Prof Alexis Comber, Professor of Spatial Data Analytics, Leeds Institute
+ - Prof Alexis Comber, Professor of Spatial Data Analytics, Leeds Institute
 for Data Analytics, University of Leeds, UK (Co-Supervisor)
 
-Dr Minh Le Kieu, Lecturer in Transport Analytics, University of
+ - Dr Minh Le Kieu, Lecturer in Transport Analytics, University of
 Auckland, New Zealand (Co-Supervisor)
 
-Phe Hoang Huu, R&D Consultants, Hanoi City, Vietnam
+ - Phe Hoang Huu, R&D Consultants, Hanoi City, Vietnam
 
-Thanh Bui Quang, Faculty of Geography, VNU University of Science, Hanoi,
+ - Thanh Bui Quang, Faculty of Geography, VNU University of Science, Hanoi,
 Vietnam
 
-Hang Nguyen Thi Thuy, VNU Vietnam Japan University, Vietnam National
+ - Hang Nguyen Thi Thuy, VNU Vietnam Japan University, Vietnam National
 University, Hanoi, Vietnam
 
-**Funders**
+## Funders
 
 This work has received funding from the British Academy under the Urban
 Infrastructures of Well-Being programme \[grant number UWB190190\].
 
-**References**
+## References
 
 Van, H. T. (2009) Upgrading from motorbikes to cars : Simulation of
 current and future traffic conditions in Ho Chi Minh City, Journal of
@@ -378,5 +367,4 @@ the Eastern Asia Society for Transportation Studies. Wilson, A. G.
 (1971) 'A Family of Spatial Interaction Models, and Associated
 Developments', Environment and Planning A: Economy and Space. doi:
 10.1068/a030001.
-
 
