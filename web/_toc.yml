@@ -25,3 +25,5 @@ parts:
 - caption: 
   chapters:
   - file: case_studies/overview
+    sections:
+      - file: case_studies/eric/eric_lida
