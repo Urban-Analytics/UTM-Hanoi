@@ -1,8 +1,6 @@
 # Case studies
 
-<!-- add your text! -->
-
-_Will show case studies_
+These case studies present some of the early results of the project.
 
 ```{tableofcontents}
 ```
