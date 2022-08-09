@@ -4,4 +4,6 @@
 
 _Will show case studies_
 
+```{tableofcontents}
+```
 
