@@ -1,6 +1,6 @@
 # Possible Impacts of a Motorbike Ban on Transport in Hanoi
 
-Author: _Eric Muriithi_
+Author: _Eric Wanjau_
 
 ---
 
