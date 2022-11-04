@@ -25,3 +25,9 @@ parts:
 - caption: 
   chapters:
   - file: case_studies/overview
+
+# Hanoi VISIT
+- caption: 
+  chapters:
+  - file: hanoi_visit/overview
+-
