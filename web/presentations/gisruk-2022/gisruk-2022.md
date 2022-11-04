@@ -1,5 +1,7 @@
 # Presentation and posters for GISRUK 2022
 
+Geographical Information Systems Research UK 2022 ([GISRUK22](http://liverpool.gisruk.org/)) was the 30th conference in the series and held at the University of Liverpol on 5th-8th April.
+
 ## Presentation
 
 [**Up-scaling a Spatial Survey with Propensity Score Matching: Implications of a Motorbike Ban in Hanoi**](https://www.nickmalleson.co.uk/p/2022-GISRUK.html). Nick Malleson, Lex Comber, Kristina Bratkova, Phe Hoang Huu, Minh Kieu, Thanh Bui Quang, Hang Nguyen Thi Thuy, and Eric Wanjau. _GIS Research UK (GISRUK)_, 6-8 April 2022, Liverpool UK. 
