@@ -29,3 +29,8 @@ parts:
     sections:
       - file: case_studies/eric/eric_lida
       - file: case_studies/kristina/kristina_lida
+
+# Hanoi VISIT
+- caption: 
+  chapters:
+  - file: hanoi_visit/overview

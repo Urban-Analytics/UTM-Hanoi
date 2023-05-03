@@ -14,12 +14,12 @@ project aims to address questions regarding how, where, and when planned policie
 should be implemented (if at all), what the impacts on local communities would
 be, whether public transport can cope, and whether there are better alternatives
 
-Successful policies will dramatically improve the wellbeing for all citizens
+Successful policies will dramatically improve the well-being for all citizens
 in Hanoi by reducing pollution and providing more equitable access to opportunities.
 
 ## Contact
 
-For more information please contact the principal inestigator at the University of Leeds, [Nick Malleson](https://environment.leeds.ac.uk/geography/staff/1069/dr-nick-malleson).
+For more information please contact the principal investigator at the University of Leeds, [Nick Malleson](https://environment.leeds.ac.uk/geography/staff/1069/dr-nick-malleson).
 
 ## Table of Contents
 
